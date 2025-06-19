@@ -1,0 +1,1 @@
+export const apiEndpoint = "https://nb9tevkex0.execute-api.us-east-1.amazonaws.com";
