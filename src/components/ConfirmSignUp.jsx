@@ -115,6 +115,7 @@
 import { useState } from "react"
 import { Loader2, Mail, Shield, CheckCircle } from "lucide-react"
 import { CognitoUser } from "amazon-cognito-identity-js"
+import { apiEndpoint } from "../config"
 import userPool from "../cognito/userPool"
 import axios from "axios"
 
@@ -123,7 +124,7 @@ export default function ConfirmSignUp({ email }) {
   const [message, setMessage] = useState("")
   const [isLoading, setIsLoading] = useState(false)
 
-  const apiEndpoint = "https://nb9tevkex0.execute-api.us-east-1.amazonaws.com"
+  // const apiEndpoint = "https://nb9tevkex0.execute-api.us-east-1.amazonaws.com"
 
   const handleSubmit = async (e) => {
     e.preventDefault()
