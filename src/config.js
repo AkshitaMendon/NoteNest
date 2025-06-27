@@ -1,1 +1,1 @@
-export const apiEndpoint = import.meta.env.API_BASE_URL;
+export const apiEndpoint = import.meta.env.VITE_API_BASE_URL;
